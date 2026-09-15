@@ -1,150 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MatchPass | Match Tickets</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MatchPass</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  color: #172033;
-}
-
-header {
-  background: #111827;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 30px;
-}
-
-header p {
-  margin: 8px 0 0;
-  color: #cbd5e1;
-}
-
-.hero {
-  padding: 40px 20px;
-  text-align: center;
-  background: white;
-}
-
-.hero h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  color: #64748b;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 25px 15px;
-}
-
-.match {
-  background: white;
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.match h3 {
-  margin-top: 0;
-  font-size: 22px;
-}
-
-.info {
-  color: #64748b;
-  line-height: 1.7;
-}
-
-.price {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-button {
-  width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 10px;
-  background: #16a34a;
-  color: white;
-  font-size: 17px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #15803d;
-}
-
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #64748b;
-}
+body{margin:0;font-family:Arial;background:#f1f5f9;color:#172033}
+header{background:#0f172a;color:white;padding:20px;text-align:center}
+header h1{margin:0}
+header span{color:#22c55e}
+.hero{text-align:center;background:#1e293b;color:white;padding:50px 20px}
+.hero h2{font-size:32px}
+.hero p{color:#cbd5e1}
+.container{max-width:900px;margin:auto;padding:30px 15px}
+.card{background:white;padding:20px;margin:15px 0;border-radius:15px;box-shadow:0 4px 15px #ddd}
+.card h3{margin-top:0}
+.info{line-height:1.8;color:#64748b}
+.price{font-size:20px;font-weight:bold;margin:15px 0}
+button{width:100%;padding:14px;border:0;border-radius:9px;background:#16a34a;color:white;font-size:16px;font-weight:bold}
+.features{text-align:center;background:white;padding:30px 15px}
+footer{text-align:center;background:#0f172a;color:white;padding:25px}
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>⚽ MatchPass</h1>
-  <p>Online Match Ticketing Platform</p>
+<h1>⚽ Match<span>Pass</span></h1>
+<p>Online Match Ticketing Platform</p>
 </header>
 
 <section class="hero">
-  <h2>Get Your Match Tickets</h2>
-  <p>Find upcoming matches and reserve your ticket online.</p>
+<h2>Get Your Match Tickets</h2>
+<p>Find upcoming matches and reserve your ticket online.</p>
 </section>
 
 <div class="container">
 
-  <div class="match">
-    <h3>⚽ Local Football Match</h3>
+<h2>Upcoming Matches</h2>
 
-    <div class="info">
-      📅 Date: Coming Soon<br>
-      📍 Venue: Coming Soon<br>
-      🕐 Time: Coming Soon
-    </div>
+<div class="card">
+<h3>⚽ Local Football Match</h3>
 
-    <div class="price">
-      Ticket: KSh 500
-    </div>
+<div class="info">
+📅 Date: Coming Soon<br>
+📍 Venue: Coming Soon<br>
+🕐 Time: Coming Soon
+</div>
 
-    <button onclick="buyTicket()">
-      Buy Ticket
-    </button>
-  </div>
+<div class="price">KSh 500</div>
+
+<button onclick="buy()">Buy Ticket</button>
+</div>
+
+<div class="card">
+<h3>🏆 Championship Match</h3>
+
+<div class="info">
+📅 Date: Coming Soon<br>
+📍 Venue: Coming Soon<br>
+🕐 Time: Coming Soon
+</div>
+
+<div class="price">KSh 750</div>
+
+<button onclick="buy()">Buy Ticket</button>
+</div>
 
 </div>
 
+<section class="features">
+<h2>Why MatchPass?</h2>
+<p>🎟️ Easy Ticket Booking</p>
+<p>📱 Digital Tickets</p>
+<p>🔐 Secure Ticketing</p>
+<p>⚡ Fast Confirmation</p>
+</section>
+
 <footer>
-  © 2026 MatchPass. All rights reserved.
+<h3>⚽ MatchPass</h3>
+<p>Online Match Ticketing Platform</p>
+<p>© 2026 MatchPass</p>
 </footer>
 
 <script>
-function buyTicket() {
-  alert("Ticket purchasing will be available soon.");
+function buy(){
+alert("Ticket booking will be available soon.");
 }
 </script>
 
