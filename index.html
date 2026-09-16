@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+o<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -82,12 +82,23 @@ footer{text-align:center;background:#0f172a;color:white;padding:25px}
 <p>Online Match Ticketing Platform</p>
 <p>© 2026 MatchPass</p>
 </footer>
-
 <script>
 function buy(){
-alert("Ticket booking will be available soon.");
+let name=prompt("Enter your full name:");
+if(!name)return;
+
+let phone=prompt("Enter your phone number:");
+if(!phone)return;
+
+let tickets=prompt("How many tickets do you need?");
+if(!tickets)return;
+
+alert("Booking received!\n\nName: "+name+
+"\nPhone: "+phone+
+"\nTickets: "+tickets+
+"\n\nPayment will be added next.");
 }
 </script>
-
+<
 </body>
 </html>
