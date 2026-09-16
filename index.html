@@ -48,10 +48,23 @@ footer{text-align:center;background:#0f172a;color:white;padding:25px}
 </footer>
 <script>
 function buy(){
-alert("Ticket booking coming soon.");
+
+let name=prompt("Enter your full name:");
+if(!name)return;
+
+let phone=prompt("Enter your phone number:");
+if(!phone)return;
+
+let tickets=prompt("How many tickets?");
+if(!tickets)return;
+
+alert("Booking received!\n\nName: "+name+
+"\nPhone: "+phone+
+"\nTickets: "+tickets+
+"\n\nPayment will be added next.");
+
 }
 </script>
-
 
 </body>
 </html>
