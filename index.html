@@ -1,24 +1,16 @@
-o<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MatchPass</title>
-
 <style>
-body{margin:0;font-family:Arial;background:#f1f5f9;color:#172033}
-header{background:#0f172a;color:white;padding:20px;text-align:center}
-header h1{margin:0}
-header span{color:#22c55e}
+body{font-family:Arial;margin:0;background:#f1f5f9;color:#172033}
+header{background:#0f172a;color:white;text-align:center;padding:20px}
 .hero{text-align:center;background:#1e293b;color:white;padding:50px 20px}
-.hero h2{font-size:32px}
-.hero p{color:#cbd5e1}
-.container{max-width:900px;margin:auto;padding:30px 15px}
-.card{background:white;padding:20px;margin:15px 0;border-radius:15px;box-shadow:0 4px 15px #ddd}
-.card h3{margin-top:0}
-.info{line-height:1.8;color:#64748b}
-.price{font-size:20px;font-weight:bold;margin:15px 0}
-button{width:100%;padding:14px;border:0;border-radius:9px;background:#16a34a;color:white;font-size:16px;font-weight:bold}
-.features{text-align:center;background:white;padding:30px 15px}
+.container{max-width:800px;margin:auto;padding:30px 15px}
+.card{background:white;padding:20px;margin:20px 0;border-radius:15px}
+button{width:100%;padding:14px;background:#16a34a;color:white;border:0;border-radius:8px;font-size:16px}
+.price{font-weight:bold;font-size:20px;margin:15px 0}
 footer{text-align:center;background:#0f172a;color:white;padding:25px}
 </style>
 </head>
@@ -26,7 +18,7 @@ footer{text-align:center;background:#0f172a;color:white;padding:25px}
 <body>
 
 <header>
-<h1>⚽ Match<span>Pass</span></h1>
+<h1>⚽ MatchPass</h1>
 <p>Online Match Ticketing Platform</p>
 </header>
 
@@ -41,64 +33,25 @@ footer{text-align:center;background:#0f172a;color:white;padding:25px}
 
 <div class="card">
 <h3>⚽ Local Football Match</h3>
-
-<div class="info">
-📅 Date: Coming Soon<br>
-📍 Venue: Coming Soon<br>
-🕐 Time: Coming Soon
-</div>
-
+<p>📅 Date: Coming Soon</p>
+<p>📍 Venue: Coming Soon</p>
+<p>🕐 Time: Coming Soon</p>
 <div class="price">KSh 500</div>
-
-<button onclick="buy()">Buy Ticket</button>
-</div>
-
-<div class="card">
-<h3>🏆 Championship Match</h3>
-
-<div class="info">
-📅 Date: Coming Soon<br>
-📍 Venue: Coming Soon<br>
-🕐 Time: Coming Soon
-</div>
-
-<div class="price">KSh 750</div>
-
 <button onclick="buy()">Buy Ticket</button>
 </div>
 
 </div>
-
-<section class="features">
-<h2>Why MatchPass?</h2>
-<p>🎟️ Easy Ticket Booking</p>
-<p>📱 Digital Tickets</p>
-<p>🔐 Secure Ticketing</p>
-<p>⚡ Fast Confirmation</p>
-</section>
 
 <footer>
-<h3>⚽ MatchPass</h3>
-<p>Online Match Ticketing Platform</p>
+<p>⚽ MatchPass</p>
 <p>© 2026 MatchPass</p>
 </footer>
+
 <script>
 function buy(){
-let name=prompt("Enter your full name:");
-if(!name)return;
-
-let phone=prompt("Enter your phone number:");
-if(!phone)return;
-
-let tickets=prompt("How many tickets do you need?");
-if(!tickets)return;
-
-alert("Booking received!\n\nName: "+name+
-"\nPhone: "+phone+
-"\nTickets: "+tickets+
-"\n\nPayment will be added next.");
+alert("Ticket booking coming soon.");
 }
 </script>
-<
+
 </body>
 </html>
