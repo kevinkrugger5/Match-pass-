@@ -6,11 +6,13 @@
 <style>
 body{font-family:Arial;margin:0;background:#f1f5f9;color:#172033}
 header{background:#0f172a;color:white;text-align:center;padding:20px}
-.hero{text-align:center;background:#1e293b;color:white;padding:50px 20px}
-.container{max-width:800px;margin:auto;padding:30px 15px}
-.card{background:white;padding:20px;margin:20px 0;border-radius:15px}
+.hero{text-align:center;background:#1e293b;color:white;padding:40px 20px}
+.container{max-width:700px;margin:auto;padding:25px 15px}
+.card,.form{background:white;padding:20px;margin:20px 0;border-radius:15px}
 button{width:100%;padding:14px;background:#16a34a;color:white;border:0;border-radius:8px;font-size:16px}
-.price{font-weight:bold;font-size:20px;margin:15px 0}
+input,select{width:100%;padding:12px;margin:8px 0 15px;box-sizing:border-box}
+.price{font-size:20px;font-weight:bold;margin:15px 0}
+.form{display:none}
 footer{text-align:center;background:#0f172a;color:white;padding:25px}
 </style>
 </head>
@@ -37,7 +39,28 @@ footer{text-align:center;background:#0f172a;color:white;padding:25px}
 <p>📍 Venue: Coming Soon</p>
 <p>🕐 Time: Coming Soon</p>
 <div class="price">KSh 500</div>
-<button onclick="buy()">Buy Ticket</button>
+<button onclick="showForm()">Buy Ticket</button>
+</div>
+
+<div class="form" id="form">
+<h2>🎟️ Book Your Ticket</h2>
+
+<label>Full Name</label>
+<input id="name" type="text" placeholder="Your full name">
+
+<label>Phone Number</label>
+<input id="phone" type="tel" placeholder="0712345678">
+
+<label>Number of Tickets</label>
+<select id="tickets">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+
+<button onclick="book()">Continue</button>
 </div>
 
 </div>
@@ -46,23 +69,27 @@ footer{text-align:center;background:#0f172a;color:white;padding:25px}
 <p>⚽ MatchPass</p>
 <p>© 2026 MatchPass</p>
 </footer>
+
 <script>
-function buy(){
+function showForm(){
+document.getElementById("form").style.display="block";
+document.getElementById("form").scrollIntoView();
+}
 
-let name=prompt("Enter your full name:");
-if(!name)return;
+function book(){
+let n=document.getElementById("name").value;
+let p=document.getElementById("phone").value;
+let t=document.getElementById("tickets").value;
 
-let phone=prompt("Enter your phone number:");
-if(!phone)return;
+if(n===""||p===""){
+alert("Please enter your name and phone number.");
+return;
+}
 
-let tickets=prompt("How many tickets?");
-if(!tickets)return;
-
-alert("Booking received!\n\nName: "+name+
-"\nPhone: "+phone+
-"\nTickets: "+tickets+
+alert("Booking received!\n\nName: "+n+
+"\nPhone: "+p+
+"\nTickets: "+t+
 "\n\nPayment will be added next.");
-
 }
 </script>
 
